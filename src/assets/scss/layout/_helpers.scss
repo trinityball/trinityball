@@ -1,0 +1,83 @@
+.ui.grid {
+  &.container {
+    @include mobile {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+
+  > .row {
+    &.unpadded {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &.top.padded {
+      padding-top: 60px;
+    }
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.section {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  &.padded {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &.slightly {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    &.extra {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+
+    &.extremely {
+      padding-top: 150px;
+      padding-bottom: 150px;
+    }
+  }
+
+  &.blue.grey {
+    background-color: $blue-grey;
+  }
+
+  &.blue.dark {
+    background-color: $dark-blue;
+    color: #FFF;
+  }
+
+  &.dark.green {
+    background-color: $dark-green;
+    color: #FFF !important;
+  }
+
+  &.blue.green.gradient {
+    background: linear-gradient(90deg, $dark-blue, $dark-green);
+  }
+
+  @mixin mobile-padding() {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include mobile {
+    &.padded {
+      @include mobile-padding();
+
+      &.slightly,
+      &.extra,
+      &.extremely {
+        @include mobile-padding();
+      }
+    }
+  }
+}

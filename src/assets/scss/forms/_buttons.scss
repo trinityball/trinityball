@@ -1,0 +1,66 @@
+// non .ui buttons
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 1px solid;
+  border-color: $color__border-button;
+  border-radius: 2px;
+}
+
+// semantic overrides
+.ui.button {
+  //font-weight: 400;
+  //font-size: 12px;
+  //line-height: 18px;
+  //font-family: $font__main;
+  //border-radius: 2px;
+  //padding: 11px 35px;
+
+  &.primary {
+    background-color: $primary;
+
+    &:hover {
+      background-color: lighten($primary, 10%);
+    }
+  }
+
+  &.orange {
+    &:hover {
+      background-color: lighten($orange, 10%);
+    }
+  }
+
+  &.red {
+    background-color: $coral;
+
+    &:hover {
+      background-color: lighten($coral, 10%);
+    }
+  }
+
+  &.orange {
+    background-color: $orange;
+
+    &:hover {
+      background-color: lighten($orange, 10%);
+    }
+  }
+
+  &.green {
+    background-color: $light-green;
+
+    &:hover {
+      background-color: lighten($light-green, 10%);
+    }
+  }
+
+  &.spaced {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  @include mobile {
+    margin: 5px;
+  }
+}

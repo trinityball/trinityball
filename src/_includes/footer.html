@@ -1,38 +1,53 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.author.github %}
-          <li>
-            {% include icon-github.html username=site.author.github %}
-          </li>
-          {% endif %}
-
-          {% if site.author.twitter %}
-          <li>
-            {% include icon-twitter.html username=site.author.twitter %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
+<footer id="footer" class="padded blue grey footer section">
+  <div class="ui five column doubling stackable grid container">
+    <div class="column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Committee</a></li>
+        <li><a href="#">Work</a></li>
+      </ul>
     </div>
-
+    <div class="column">
+      <h3>Tickets</h3>
+      <ul>
+        <li><a href="/#ticket-section">Ticket Details</a></li>
+        <li><a href="https://mayball.trin.cam.ac.uk/apply/tickets/">Ticket Applications</a></li>
+        <li><a href="/ticket-transfer/">Ticket Transfer</a></li>
+        <li><a href="/ticket-faq/">Ticketing FAQ</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Address</h3>
+      <ul>
+        <li><a href="#">Trinity College</a></li>
+        <li><a href="#">Cambridge</a></li>
+        <li><a href="#">CB2 1TQ</a></li>
+        <li><a href="#">View in Maps</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>The Fun Stuff</h3>
+      <ul>
+        <li><a href="/terms/">Terms and Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+        <li><a href="#">VAT No: 0123456</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      {% include logo-icon.svg %}
+    </div>
   </div>
-
+  <div class="ui grid container">
+    <div class="sixteen wide column">
+      <!-- TODO: padding -->
+    </div>
+  </div>
+  <div class="ui copyright grid container">
+    <div class="sixteen wide center aligned column">
+      <p>&copy; Copyright 2017 Trinity May Ball Committee</p>
+    </div>
+  </div>
 </footer>

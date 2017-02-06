@@ -4,21 +4,16 @@
   {% include head.html %}
 
   <body>
+    {% include navigation.html %}
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
+    <div class="page content {{ page.className }}">
         {{ content }}
-      </div>
     </div>
 
     {% include footer.html %}
 
-  <!-- JS -->
-  <!-- inject:js -->
-  <!-- endinject -->
-
+    <!-- JS -->
+    <!-- inject:js -->
+    <!-- endinject -->
   </body>
-
 </html>

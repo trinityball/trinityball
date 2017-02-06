@@ -7,6 +7,9 @@
     "name": "Liam Gray",
     "email": "liam@wiringtheworld.com"
   },
+  "scripts": {
+    "start": "gulp"
+  },
   "devDependencies": {
     "autoprefixer": "^6.2.3",
     "babel-preset-es2015": "^6.9.0",

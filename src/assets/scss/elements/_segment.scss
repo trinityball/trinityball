@@ -1,0 +1,15 @@
+.ui.segment {
+  border-radius: 0;
+  box-shadow: none;
+  border: 0;
+  padding: 2rem;
+
+  &.light.blue {
+    background: #f9fbfd;
+  }
+
+  &.ticket {
+    background: #fafafa;
+    padding: 3.5rem 2.5rem;
+  }
+}

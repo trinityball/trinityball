@@ -1,0 +1,20 @@
+.crossfade {
+  position: relative;
+  margin-bottom: 1rem;
+  opacity: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  > div,
+  > p,
+  > img,
+  > object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+  }
+}

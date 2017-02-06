@@ -26,13 +26,17 @@ gulp.task('scripts', () =>
   // top to bottom, so you want vendor scripts etc on top
   gulp.src([
     'src/assets/javascript/vendor.js',
-    'src/assets/javascript/main.js'
+    'src/assets/javascript/jquery*.min.js',
+    'src/assets/javascript/semantic.min.js',
+    'src/assets/javascript/semantic.min.js',
+    'src/assets/javascript/*.js',
+    'src/assets/javascript/main.js',
   ])
     .pipe(newer('.tmp/assets/javascript/index.js', {dest: '.tmp/assets/javascript', ext: '.js'}))
     .pipe(when(!argv.prod, sourcemaps.init()))
-    .pipe(babel({
+    .pipe(when('!*.min.js', babel({
       presets: ['es2015']
-    }))
+    })))
     .pipe(concat('index.js'))
     .pipe(size({
       showFiles: true
@@ -64,7 +68,7 @@ gulp.task('styles', () =>
       precision: 10
     }).on('error', sass.logError))
     .pipe(postcss([
-      autoprefixer({browsers: 'last 1 version'})
+      autoprefixer({browsers: '> 0.01%'})
     ]))
     .pipe(size({
       showFiles: true

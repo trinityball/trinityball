@@ -1,0 +1,17 @@
+/**
+ * Styling typed.js stuff
+ */
+.typed-cursor {
+  opacity: 0;
+  animation: 1s infinite cursor;
+  font-size: 1.4em;
+  vertical-align: middle;
+}
+
+@keyframes cursor {
+  0% { opacity: 0; }
+  15% { opacity: 1; }
+  50% { opacity: 1; }
+  65% { opacity: 0; }
+  100% { opacity: 0;}
+}

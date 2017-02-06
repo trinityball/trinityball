@@ -1,22 +1,142 @@
 ---
 layout: default
+className: home
 ---
 
-<div class="home">
+<div id="hero-section" class="extra padded blue grey hero section">
+  <div class="ui very relaxed grid container">
+    <div class="sixteen wide mobile ten wide tablet ten wide computer middle aligned column">
+      <h1>Trinity May Ball 2017</h1>
+      <h2>Redefining luxury, champagne, entertainment, fireworks, and petting zoos since 1866.</h2>
+    </div>
+    <div class="sixteen wide mobile six wide tablet six wide computer middle aligned column">
+      <div class="basic center aligned buttons segment">
+        <a href="/#ticket-section" class="primary ui fluid right labeled icon button">Buy Tickets <i class="ticket icon"></i></a>
+        <div class="ui horizontal divider">OR</div>
+        <a href="#" class="primary ui fluid right labeled icon button">Apply to Work <i class="money icon"></i></a>
+      </div>
+    </div>
+  </div>
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="image carousel">
+    <div class="image"><img src="https://www.springball.com/assets/img/home/basshunter.jpg"></div>
+    <div class="image"><img src="https://www.springball.com/assets/img/home/nick.jpg"></div>
+    <div class="image"><img src="https://www.springball.com/assets/img/home/ohdear.jpg"></div>
+    <div class="image"><img src="https://www.springball.com/assets/img/home/morell.jpg"></div>
+    <div class="image"><img src="https://www.springball.com/assets/img/home/couple.jpg"></div>
+    <div class="image"><img src="https://www.springball.com/assets/img/home/basshunter2.jpg"></div>
+    <div class="image"><img src="https://www.springball.com/assets/img/home/scotsmen.jpg"></div>
+    <div class="image"><img src="https://www.springball.com/assets/img/home/people.jpg"></div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <div class="arrow left"><img src="https://www.springball.com/assets/img/carousel/arrow-left.png"></div>
+    <div class="arrow right"><img src="https://www.springball.com/assets/img/carousel/arrow-right.png"></div>
+  </div>
+</div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<div id="history-section" class="history section">
+  <div class="ui grid container">
+    <!-- 1866 -->
+    <div class="row">
+      <div class="sixteen wide mobile eight wide tablet eight wide computer column">
+        <img src="https://www.springball.com/assets/img/home/nick.jpg">
+      </div>
+      <div class="sixteen wide mobile eight wide tablet eight wide computer middle aligned center aligned lined column">
+        <div class="basic segment">
+          <h2>1866</h2>
+          <h3>Founding of the Ball</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus lacinia consectetur. Sed in magna vitae nunc cursus lobortis.</p>
+        </div>
+      </div>
+    </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <!-- 1972 -->
+    <div class="row">
+      <div class="sixteen wide mobile eight wide tablet eight wide computer middle aligned center aligned lined column">
+        <div class="basic segment">
+          <h2>1972</h2>
+          <h3>Something Cool</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus lacinia consectetur. Sed in magna vitae nunc cursus lobortis.</p>
+        </div>
+      </div>
+      <div class="sixteen wide mobile eight wide tablet eight wide computer column">
+        <img src="https://www.springball.com/assets/img/home/nick.jpg">
+      </div>
+    </div>
+
+    <!-- 2016 -->
+    <div class="row">
+      <div class="sixteen wide mobile eight wide tablet eight wide computer column">
+        <img src="https://www.springball.com/assets/img/home/nick.jpg">
+      </div>
+      <div class="sixteen wide mobile eight wide tablet eight wide computer middle aligned center aligned lined column">
+        <div class="basic segment">
+          <h2>2016</h2>
+          <h3>The 150th Anniversary</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus lacinia consectetur. Sed in magna vitae nunc cursus lobortis.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="ticket-section" class="extra padded tickets section">
+  <div class="ui grid container">
+    <div class="sixteen wide center aligned lined column">
+      <div class="basic segment">
+        <h2>2017</h2>
+        <h3>Get Your Tickets Now</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus lacinia consectetur. Sed in magna vitae nunc cursus lobortis.</p>
+      </div>
+    </div>
+  </div>
+  <div class="ui three column stackable grid container">
+    <div class="middle aligned column">
+      <div class="ui center aligned ticket segment">
+        <h2>Dining Ticket</h2>
+        <p>
+          lots of text about the ticket
+          lots of text about the ticket
+          lots of text about the ticket
+          lots of text about the ticket
+          lots of text about the ticket
+          lots of text about the ticket
+        </p>
+        <a href="#" class="ui primary right labeled icon button">Apply Now <i class="food icon"></i></a>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="ui center aligned ticket segment">
+        <h2>Standard Ticket</h2>
+        <p>
+          lots of text about the ticket
+          lots of text about the ticket
+          lots of text about the ticket
+          lots of text about the ticket
+          lots of text about the ticket
+          lots of text about the ticket
+          lots of text about the ticket
+          lots of text about the ticket
+          lots of text about the ticket
+          lots of text about the ticket
+        </p>
+        <a href="#" class="ui primary right labeled icon button">Apply Now <i class="ticket icon"></i></a>
+      </div>
+    </div>
+
+    <div class="middle aligned column">
+      <div class="ui center aligned ticket segment">
+        <h2>VIP Ticket</h2>
+        <p>
+          lots of text about the ticket
+          lots of text about the ticket
+          lots of text about the ticket
+          lots of text about the ticket
+          lots of text about the ticket
+          lots of text about the ticket
+        </p>
+        <a href="#" class="ui primary right labeled icon button">Apply Now <i class="bar icon"></i></a>
+      </div>
+    </div>
+  </div>
 </div>

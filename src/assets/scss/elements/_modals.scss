@@ -1,0 +1,41 @@
+.ui.modal {
+  &.contact {
+    padding: 35px 60px 40px;
+    max-width: 550px;
+
+    // validation
+    .wpcf7-not-valid-tip {
+      margin-top: 10px;
+    }
+
+    @include mobile {
+      padding: 35px 1rem 40px;
+    }
+
+    .form {
+      margin-top: 50px;
+
+      .field input,
+      .field textarea {
+        @extend .underline.input;
+        border-radius: 0;
+        padding-left: 0;
+      }
+
+      textarea {
+        max-height: 100px;
+      }
+
+      input[type="submit"] {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &.service {
+    .content {
+      padding: 40px 50px 70px;
+    }
+  }
+
+}
