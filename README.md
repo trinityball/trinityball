@@ -1,6 +1,6 @@
-# static
+# Trinity May Ball 2017 Static Site
 
-> Trinity May Ball Static Site
+> Built by Liam Gray for the Trinity May Ball 2017 Committee
 
 ## To get started
 
