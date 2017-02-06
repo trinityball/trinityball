@@ -1,6 +1,6 @@
 {
-  "name": "static",
-  "version": "0.0.0",
+  "name": "TrinityMayBall",
+  "version": "1.0.0",
   "description": "Trinity May Ball Static Site",
   "homepage": "https://trinityball.co.uk",
   "author": {
@@ -8,7 +8,10 @@
     "email": "liam@wiringtheworld.com"
   },
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "build": "gulp build",
+    "link": "npm run check",
+    "check": "gulp check"
   },
   "devDependencies": {
     "autoprefixer": "^6.2.3",
