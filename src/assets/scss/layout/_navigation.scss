@@ -12,19 +12,15 @@ body.sidebar-open {
   left: 0;
   width: 100%;
   z-index: 100;
-  background: rgba(255, 255, 255, 1);
   max-height: 100vh;
   overflow: visible;
   will-change: background, top, left, margin-top, position;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 
   @include mobile {
     overflow: auto;
   }
 
   &.scrolling {
-    background: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
     margin-top: 0;
     top: -70px;
     opacity: 0;
@@ -73,6 +69,9 @@ body.sidebar-open {
 
   &.scrolling,
   &.mobile.open {
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+
     .menu.mobile.toggle {
       span {
         &,
@@ -96,13 +95,10 @@ body.sidebar-open {
             fill: $black !important;
           }
         }
-      }
-    }
 
-    .menu ul {
-      > li {
-        > a {
-          color: $black;
+        .text {
+          height: 0;
+          padding: 0;
         }
       }
     }
@@ -212,10 +208,11 @@ body.sidebar-open {
 
         > a {
           display: block;
-          color: #2d2d2e;
-          font-size: 14px;
+          color: $color__link;
+          font-size: 16px;
           transition: color $animation-duration ease;
           will-change: color;
+          font-weight: bold;
 
           &.ui.button {
             color: #fff;
@@ -227,7 +224,7 @@ body.sidebar-open {
 
           @include computer {
             &:hover {
-              color: $primary;
+              color: $color__link-hover;
             }
           }
 
@@ -308,6 +305,7 @@ body.sidebar-open {
   .logo {
     padding: 7px 0;
     transition: padding $animation-duration ease;
+    text-align: center;
 
     @include mobile {
       padding: 20px 0;
@@ -316,12 +314,12 @@ body.sidebar-open {
     a {
       display: block;
       padding-top: 3px;
-      //padding-bottom: 3px;
+      padding-bottom: 3px;
       vertical-align: middle;
       font-size: 26px;
       line-height: 20px;
       font-weight: 600;
-      font-family: 'Lobster Two', 'Open Sans', sans-serif;
+      font-family: 'Belleza', 'Lobster Two', 'Open Sans', sans-serif;
       color: $blue;
 
       img {
@@ -331,7 +329,8 @@ body.sidebar-open {
       svg {
         height: 50px;
         vertical-align: middle;
-        margin-bottom: 3px;
+        display: block;
+        margin: 0 auto;
 
         @include mobile {
           height: 30px;
@@ -340,6 +339,17 @@ body.sidebar-open {
         .logo-text {
           transition: fill $animation-duration ease;
         }
+      }
+
+      .text {
+        display: block;
+        overflow: hidden;
+        margin: 0 auto;
+        vertical-align: top;
+        line-height: 26px;
+        height: 32px;
+        padding-bottom: 6px;
+        transition: all $animation-duration ease;
       }
 
       &:hover {

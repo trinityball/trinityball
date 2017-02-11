@@ -5,6 +5,37 @@
   $line-color: $grey;
 
   .hero.section {
+    position: relative;
+    padding-top: 120px + 80px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 0) 100%);
+
+    .background {
+      content: '';
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      background: url('/assets/images/tiled-background.png') center;
+      background-size: 700px;
+      opacity: 0.3;
+      transform: translate3D(0, 0, 0);
+      z-index: -1;
+      //transition: transform 0.35s linear;
+    }
+
+    .ui.grid {
+      min-height: 100%;
+    }
+
     h1, h2 {
       color: $medium-grey;
     }
@@ -12,7 +43,7 @@
     h1 {
       font-weight: 700;
       font-size: 72px;
-      letter-spacing: -0.05em;
+      letter-spacing: -0.0em;
     }
 
     h2 {
@@ -161,6 +192,23 @@
       p {
         margin: 1.5rem 0 2rem;
       }
+    }
+  }
+
+  .information.section {
+    padding-top: 180px;
+    position: relative;
+
+    .google.maps {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0.2;
+      pointer-events: none !important;
     }
   }
 }

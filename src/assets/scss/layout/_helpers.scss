@@ -30,6 +30,11 @@
     padding-top: 80px;
     padding-bottom: 80px;
 
+    &.header {
+      padding-top: 0;
+      padding-bottom: 80px;
+    }
+
     &.slightly {
       padding-top: 40px;
       padding-bottom: 40px;

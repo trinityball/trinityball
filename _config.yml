@@ -1,7 +1,7 @@
 # Title, decription, tagline and URL for your site
 # Can be used in your theme by calling 'site.title' and so on
-title: static
-description: Trinity May Ball Static Site
+title: Trinity May Ball 2017
+description: Trinity May Ball 2017
 url: https://trinityball.co.uk
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
@@ -16,7 +16,7 @@ author:
   name: Liam Gray
   email: liam@wiringtheworld.com
   uri: http://wiringtheworld.com
-  bio: 
+  bio:
   twitter:
   github:
 

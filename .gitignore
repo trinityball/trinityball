@@ -4,6 +4,7 @@
 # This takes care of .tmp, .sass-cache, and many others
 .*/
 .idea/
+*.tgz
 
 # OSX
 ._*

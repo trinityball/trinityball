@@ -3,14 +3,14 @@
 
 # TEAM
 
-    Liam Gray -- <role> -- @
+    Liam Gray -- Designer and Developer -- @hoxxep
 
 # THANKS
 
-    <name>
+    Francois Sherwood -- Designer
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3, JavaScript
+    HTML5, CSS3, SCSS, JavaScript
     Jekyll, Lanyon/Poole, HTML5 Boilerplate
-    Yeoman, Jekyllized
+    Yeoman, Jekyllized, Semantic UI
