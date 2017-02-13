@@ -20,6 +20,8 @@
       order: 10;
 
       img, svg {
+        display: block;
+        margin: 0 auto;
         max-width: 200px;
       }
     }

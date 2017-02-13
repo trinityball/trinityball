@@ -19,8 +19,39 @@ function headerParallax() {
   });
 }
 
-try {
-  headerParallax();
-} catch (e) {
-  console.error(e);
+function smoothScroll() {
+  $('a[href*="#"]:not([href="#"])').click(function (e) {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      let target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        let offset = target.offset().top;
+
+        if (target.hasClass('extremely padded')) {
+          offset += 80;
+        } else if (target.hasClass('extra padded')) {
+          offset += 20;
+        } else if (target.hasClass('history section')) {
+          offset += 50;
+        } else if (!target.hasClass('padded')) {
+          offset -= 50;
+        }
+
+        if (offset < 0) {
+          offset = 0;
+        }
+
+        $('html, body').animate({
+          scrollTop: offset
+        }, 350);
+
+        e.preventDefault();
+      }
+    }
+  });
 }
+
+$(document).ready(() => {
+  headerParallax();
+  smoothScroll();
+});
