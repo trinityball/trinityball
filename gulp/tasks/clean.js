@@ -28,6 +28,12 @@ gulp.task('clean:site', () => {
   return del(['.tmp/src']);
 });
 
+gulp.task('clean:folders', () => {
+  return del(['.tmp/', 'dist/']);
+});
+
 gulp.task('clean:cache', (cb) => {
   return cache.clearAll(cb);
 });
+
+gulp.task('clean:all', gulp.parallel('clean:folders', 'clean:cache'));

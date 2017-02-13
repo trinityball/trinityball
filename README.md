@@ -4,18 +4,21 @@
 
 ## To get started
 
+Watch the folder for changes and server on localhost:3000.
 ```sh
 $ gulp [--prod]
 ```
 
 ## Usage
 
+To build the production version:
 ```sh
 $ gulp build [--prod]
 ```
 
+To build the production version and upload over rsync.
 ```sh
-$ gulp deploy
+$ gulp deploy --prod
 ```
 
 #### Settings
