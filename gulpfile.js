@@ -33,7 +33,7 @@ gulp.task('deploy', gulp.series('upload'));
 
 // 'gulp rebuild' -- WARNING: Erases your assets and built site, use only when
 // you need to do a complete rebuild
-gulp.task('rebuild', gulp.series('clean', 'clean:images'));
+gulp.task('rebuild', gulp.series('clean:cache', 'clean', 'clean:images'));
 
 // 'gulp check' -- checks your site configuration for errors and lint your JS
 gulp.task('check', gulp.series('site:check'));
