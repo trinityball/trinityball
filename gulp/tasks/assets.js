@@ -28,7 +28,7 @@ gulp.task('scripts', () =>
     'src/assets/javascript/vendor.js',
     'src/assets/javascript/jquery*.min.js',
     'src/assets/javascript/semantic.min.js',
-    'src/assets/javascript/semantic.min.js',
+    'src/assets/javascript/lity.min.js',
     'src/assets/javascript/*.js',
     'src/assets/javascript/main.js',
   ])

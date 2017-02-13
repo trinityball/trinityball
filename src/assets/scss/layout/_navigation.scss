@@ -349,8 +349,12 @@ body.sidebar-open {
         font-size: 0.9rem;
         font-weight: 400;
         user-select: none;
+        flex-direction: column;
 
         > li {
+          padding-left: 0;
+          padding-right: 0;
+
           a {
             font-size: 14px;
             position: relative;
