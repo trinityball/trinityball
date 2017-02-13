@@ -11,7 +11,8 @@
     "start": "gulp",
     "build": "gulp build",
     "link": "npm run check",
-    "check": "gulp check"
+    "check": "gulp check",
+    "deploy": "gulp deploy --prod"
   },
   "devDependencies": {
     "autoprefixer": "^6.2.3",
