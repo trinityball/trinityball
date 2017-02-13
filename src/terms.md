@@ -3,6 +3,9 @@ layout: page
 title: Terms and Conditions
 permalink: /terms/
 className: terms
+redirect_from:
+  - /terms.html
+  - /tickets/terms
 ---
 
 # TICKET TERMS AND CONDITIONS

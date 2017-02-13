@@ -3,6 +3,8 @@ layout: page
 title: Tickets FAQ
 permalink: /ticket-faq/
 className: faq
+redirect_from:
+  - /ticketsFAQ.html
 ---
 
 # Ticketing FAQ

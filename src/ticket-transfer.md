@@ -3,6 +3,8 @@ layout: page
 title: Ticket Transfer
 permalink: /ticket-transfer/
 className: ticket-transfer
+redirect_from:
+ - /ticketTransfer.html
 ---
 
 # Ticket Transfer
