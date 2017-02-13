@@ -214,7 +214,6 @@
   .work.section {
     // TODO: this section
 
-
     .youtube.video {
       position: relative;
       padding-bottom: 56.25%; // 16:9 is 56.25%, 50% (2:1) is what the spring ball video is
@@ -244,6 +243,19 @@
             margin-bottom: 0.35rem;
           }
         }
+      }
+    }
+  }
+
+  .poster.section {
+    .poster {
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+      transform: translateY(0);
+      transition: all 0.2s ease;
+
+      &:hover {
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+        transform: translateY(-5px);
       }
     }
   }
