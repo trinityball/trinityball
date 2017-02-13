@@ -2,7 +2,7 @@
   $row-spacing: 300px;
   $mobile-row-spacing: 100px;
   $lined-column-line-spacing: 50px;
-  $line-color: $grey;
+  $line-color: darken($grey, 10%);
 
   .hero.section {
     position: relative;
