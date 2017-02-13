@@ -11,6 +11,22 @@
 
   .logo.column {
     padding: 3rem;
+
+    @include tablet {
+      display: none;
+    }
+
+    @include mobile {
+      order: 10;
+
+      img, svg {
+        max-width: 200px;
+      }
+    }
+  }
+
+  .aligned.column {
+    text-align: center;
   }
 
   ul {
