@@ -47,6 +47,11 @@ class Header {
         e.preventDefault();
       }
     });
+
+    const self = this;
+    $('a[href*="#"]:not([href="#"])').click(function (e) {
+      self.smoothScroll.apply(this, [self, e]);
+    });
   }
 
   /**
@@ -81,6 +86,49 @@ class Header {
     }
 
     this.lastScrollPosition = scrollPosition;
+  }
+
+  /**
+   * Smooth scroll effect, closing mobile menu
+   */
+  smoothScroll(self, e) {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      let target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        self.closeMobileMenu();
+
+        let offset = target.offset().top;
+
+        if ($(window).width() > 767) {
+          if (target.hasClass('extremely padded')) {
+            offset += 80;
+          } else if (target.hasClass('extra padded')) {
+            offset += 20;
+          } else if (target.hasClass('history section')) {
+            offset += 50;
+          } else if (!target.hasClass('padded')) {
+            offset -= 50;
+          }
+        } else {
+          if (target.hasClass('padded') || target.hasClass('history section')) {
+            offset -= 30;
+          } else {
+            offset -= 80;
+          }
+        }
+
+        if (offset < 0) {
+          offset = 0;
+        }
+
+        $('html, body').animate({
+          scrollTop: offset
+        }, 350);
+
+        e.preventDefault();
+      }
+    }
   }
 
   /**
