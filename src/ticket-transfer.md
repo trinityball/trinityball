@@ -17,5 +17,7 @@ To perform a guest name change, please fill out the following Google form linked
 
 Doubles may be transferred to other members of the University of Cambridge from April 7th 2017 and will incur an administrative charge of £40. Ticket eligibility conditions apply to all transfers. Where an internal double is transferred to a new ticketholder outside of Trinity College, the difference between reduced and standard prices (i.e. £50) must also be paid to reflect the change in ticket category. Alumni double tickets are non-transferable. The transfer will only be registered after all relevant confirmations and payments have been received and cleared. If the ticket includes upgrades, then these must be transferred as well.
 
-<a class="ui primary button" href="https://goo.gl/forms/S1mYUqWRGB4OfME03">Guest Name Change</a>
-<a class="ui primary button" href="https://goo.gl/forms/cwZHHHiJ9wxoQLSl2">Full Name Change</a>
+**Name change has closed.**
+
+<a class="ui primary disabled button" href="#">Guest Name Change</a>
+<a class="ui primary disabled button" href="#">Full Name Change</a>
