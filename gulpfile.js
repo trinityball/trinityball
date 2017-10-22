@@ -2,6 +2,7 @@
 'use strict';
 
 const gulp = require('gulp');
+const ghPages = require('gulp-gh-pages');
 
 const requireDir = require('require-dir');
 const tasks = requireDir('./gulp/tasks', {recurse: true}); // eslint-disable-line
@@ -27,9 +28,10 @@ gulp.task('clean', gulp.parallel('clean:assets', 'clean:gzip', 'clean:dist', 'cl
 // 'gulp build --prod' -- same as above but with production settings
 gulp.task('build', gulp.series('clean', 'assets', 'build:site', 'html'));
 
-// You can also just use 'gulp upload' but this way you can see all the main
-// tasks in the gulpfile instead of having to hunt for the deploy tasks
-gulp.task('deploy', gulp.series('clean:all', 'build', 'upload'));
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
 
 // 'gulp rebuild' -- WARNING: Erases your assets and built site, use only when
 // you need to do a complete rebuild
