@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Liam Gray -- Designer and Developer -- @hoxxep
+
+# THANKS
+
+    Francois Sherwood -- Designer
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, SCSS, JavaScript
+    Jekyll, Lanyon/Poole, HTML5 Boilerplate
+    Yeoman, Jekyllized, Semantic UI
